@@ -2,7 +2,7 @@ const dataDBAccess = require('./dbScripts/DBAccess.js');
 const bodyParser = require("body-parser");
 
 let express = require('express');
-const portNumber =4200;
+const portNumber =process.env.PORT|| 5000;
 let app = express(); //make an insatnce of express
 let httpServer = require('http').createServer(app);
 // serving static files

@@ -1,7 +1,7 @@
 window.onload = function(){
 console.log("we have launched client script");
 //jQuery.fx.interval = 100;
-let clientSocket = io.connect('http://localhost:4200');
+let clientSocket = io();
 let x;
 let y;
 let socketId =100;
@@ -14,7 +14,7 @@ clientSocket.on('connect', function(data) {
   $(".screennewpool").hide();
  $.ajax({
         type: "POST",
-        url: "http://localhost:4200/displayEndPoint",
+        url: "/displayEndPoint",
         contentType: 'application/json',
         processData: false,//prevents from converting into a query string
         cache: false,
@@ -98,7 +98,7 @@ clientSocket.on('connect', function(data) {
                  $("body").css("background-image","url('css/assets/fond2.png')");
                  $.ajax({
                   type: "POST",
-                  url: "http://localhost:4200/displayEndPointtwo",
+                  url: "/displayEndPointtwo",
                   contentType: 'application/json',
                   processData: false,//prevents from converting into a query string
                   cache: false,

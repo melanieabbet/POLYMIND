@@ -40,7 +40,7 @@ $(".screensendelement").hide();
 
 $("#connection").on("click", function(){
  console.log("button connection clicked");
-let clientSocket = io.connect('http://localhost:4200');
+let clientSocket = io();
 
 clientSocket.on('connect', function(data) {
      console.log("connected");
@@ -269,7 +269,7 @@ clientSocket.on('connect', function(data) {
                  processData: false ,//prevents from converting into a query string
                  cache: false,
                  contentType: 'application/json',
-                 url: 'http://localhost:4200/insertEndPoint',
+                 url: '/insertEndPoint',
                  success: function(resultFromServer) {
                             console.log('success');
                             let mObj = JSON.parse(resultFromServer);
