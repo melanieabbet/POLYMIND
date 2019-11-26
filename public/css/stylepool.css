@@ -1,0 +1,207 @@
+body{
+  background-color: black;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  color:white;
+  font-family: 'Tinos', 'Helvetica', serif;
+  margin:0;
+  padding: 0;
+}
+h1{
+  margin: 0;
+  font-size: 2vw;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+.polymind{
+  background-color: black;
+  height: 25vh;
+  margin: 10vw;
+  margin-bottom: 0;
+}
+#logo{
+  box-sizing: border-box;
+  padding-top: 9vw;
+  text-align: center;
+}
+.newpool{
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-bottom: 1vw;
+  border: white solid 2px;
+}
+.pools{
+  box-sizing: border-box;
+  text-align: center;
+  height:30vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-bottom: 2vw;
+  margin-top: 2vw;
+  border: white solid 2px;
+  overflow-y: scroll;
+}
+
+.pool{
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  padding-left:1.5vw;
+  padding-bottom: 1vw;
+  margin-top: 1vw;
+  border-bottom: white solid 2px;
+}
+
+
+#stylescroll::-webkit-scrollbar-track
+{
+	border-left: 2px solid white;
+	background-color: black;
+}
+
+#stylescroll::-webkit-scrollbar
+{
+	width: 1.5vw;
+	background-color: #F5F5F5;
+}
+
+#stylescroll::-webkit-scrollbar-thumb
+{
+	background-color: white;
+}
+.usernumber{
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 2vw;
+
+}
+
+.number{
+  box-sizing: border-box;
+  width:31.3%;
+  padding: 1vw;
+  border: white solid 2px;
+}
+#threeuser{
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+#twouser{
+  background-color: white;
+  color: black;
+}
+.button{
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-bottom: 2vw;
+  padding-top: 4vw;
+
+}
+
+.buttonleft{
+  box-sizing: border-box;
+  width:31.3%;
+  padding: 1vw;
+  border: white solid 2px;
+  float:left;
+}
+.buttonright{
+  box-sizing: border-box;
+  width:31.3%;
+  padding: 1vw;
+  border: white solid 2px;
+  float:right;
+}
+#poolname{
+  box-sizing: border-box;
+  text-align: center;
+  width:50vw;
+  padding: 1vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  border: white solid 2px;
+  font-family: 'Tinos', 'Helvetica', serif;
+  font-size: 2vw;
+  display: none;
+}
+.indicateur{
+  background-color:black;
+  position:fixed;
+  index: 2;
+  width:36.5%;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom:6px;
+  border: 2px solid white;
+  border-bottom: none;
+}
+#one{
+  left:31.6%;
+  transform: rotate(-180deg);
+}
+#two{
+  bottom:0;
+  left:31.6%;
+}
+#three{
+  left:80%;
+  top:48%;
+  transform: rotate(-90deg);
+}
+#four{
+  top:48%;
+  left:-16.5%;
+  transform: rotate(90deg);
+}
+.poolelement{
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20vw;
+
+}
+
+.elementinfo{
+  position:absolute;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: black;
+  border:  2px solid white;
+  padding:0.6vw;
+  padding-top:0;
+
+}
+h3{
+  color:white;
+  font-family: 'Tinos', 'Helvetica', serif;
+   margin: 0;
+
+}
+p{
+  color:white;
+  font-family: 'Tinos', 'Helvetica', serif;
+  font-size: 1.2vw;
+  padding-top: 0.6vw;
+  margin:0;
+  text-align: left; 
+}
+.nkey{
+  position:relative;
+  box-sizing: border-box;
+  padding-right:0.6vw;
+  padding-top:0.6vw;
+  font-size: 1.2vw;
+}

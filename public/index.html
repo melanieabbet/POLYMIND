@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Polymind User</title>
+        <!-- The stylesheets -->
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Tinos:400,700&display=swap" rel="stylesheet">
+        <!--<link rel="stylesheet" href="css/style.css" />-->
+          <script src="js/p5.min.js" > </script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/jquery-3.4.1.js" > </script>
+        <script src="js/mainC.js" > </script>
+
+    </head>
+
+    <body>
+
+      <div class="screenconnection">
+         <h1 id="polymind">POLYMIND</h1>
+         <div class="element">
+           <h1 id="connection" >Connection</h1>
+         </div>
+      </div>
+      <div class="screenuserport">
+        <header>
+          <h1>Connect to a port</h1>
+        </header>
+
+        <div id = "userone" class = "element">
+          <h1>One</h1>
+        </div>
+        <div id = "usertwo" class = "element">
+          <h1>Two</h1>
+        </div>
+        <div id = "userthree" class = "element">
+          <h1>Three</h1>
+        </div>
+        <div id = "userfour" class = "element">
+          <h1>Four</h1>
+        </div>
+      </div>
+      <div class="screenhome">
+            <div class="addthought">
+            <h2>+</h2>
+           </div>
+           <div class="element" id="noborder">
+           <h1>New thought</h1>
+            </div>
+           <div class="buttonleft">
+             <h1>Quit</h1>
+           </div>
+
+      </div>
+      <div class="screenaddelement">
+        <div class="thoughtvis" id="thoughtvis">
+        </div>
+        <form id="insertElement" action="" >
+
+        <div class="element" id="vide">
+         <div class="style" id="styleone">
+          <h1> #1</h1>
+         </div>
+         <div class="style" id="styletwo">
+          <h1> #2</h1>
+         </div>
+         <div class="style" id="stylethree">
+          <h1> #3</h1>
+         </div>
+        </div>
+
+        <div class="element" id="vide">
+         <h1 id="size">Size</h1>
+         <input type="range" min="50" max="100" value="100" class="slider" id="myRange" name="size" >
+        </div>
+
+         <div class="element" id="titlefield">
+          <h1>Title</h1>
+         </div>
+         <input id="title" type="text" maxlength = "10" name = "title" required>
+
+         <div class="element" id="keywordsfield">
+          <h1>Keywords</h1>
+         </div>
+         <input id="keyone" type="text" maxlength = "10" name = "keywordone" required>
+         <input id="keytwo" type="text" maxlength = "10" name = "keywordtwo" required>
+         <input id="keythree" type="text" maxlength = "10" name = "keywordthree" required>
+
+
+         <div class="element" id="textfield">
+        <h1>Text</h1>
+         </div>
+         <!--<input id="text" type="text" maxlength = "50" name = "a_text" required>-->
+         <textarea  id="text" name="text" rows="20" cols="10" maxlength = "150" required></textarea>
+
+
+        <div class="buttonleft" id="gomain">
+          <h1>Quit</h1>
+        </div>
+        <!--<div class="buttonright" id="create" type = "submit" name = "submit">
+          <h1>Create</h1>
+        </div> -->
+         <input class="buttonright" type = "submit" name = "submit" value = "Submit" id =buttonS />
+        </form>
+      </div>
+      <div class="screensendelement">
+
+        <div class="containerarrow">
+         <div id="linesend"></div>
+         <div class="triangledown"></div>
+         <div class="instruction">
+           <h1>Drag and drop to send</h1>
+         </div>
+         </div>
+         <svg classe="sendlinebox"width="100vw" height="50vh" version="1.1" xmlns="http://www.w3.org/2000/svg">
+           <line  x1="50vw" y1="0" x2="50vw" y2="0" stroke="white" stroke-width="2px"/>
+         </svg>
+
+        <div class="elementbox">
+          <!--<div class="box" id="c">
+            <h1>hello</h1>
+          </div>-->
+        </div>
+         <div class="buttonleft">
+           <h1>Back</h1>
+         </div>
+         <div class="buttonright" type = "submit" name = "submit">
+           <h1>See</h1>
+         </div>
+
+
+      </div>
+      <div class="userheader">
+       <div class="points">
+         <div class="pointone" id="point" >
+         </div>
+         <div class="pointtwo"id="point" >
+         </div>
+         <div class="pointthree" id="point" >
+         </div>
+         <div class="pointfour" id="point">
+         </div>
+        </div>
+      </div>
+      <div class="userheadertwo">
+       <div class="points">
+         <div class="pointonebis">
+         </div>
+         <div class="pointtwobis">
+         </div>
+         <div class="pointthreebis">
+         </div>
+        </div>
+      </div>
+
+
+
+
+  </body>
+</html>

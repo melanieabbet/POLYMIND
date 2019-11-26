@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Polymind Pool</title>
+
+        <!-- The stylesheets -->
+        <link rel="stylesheet" href="css/stylepool.css">
+        <link href="https://fonts.googleapis.com/css?family=Tinos:400,700&display=swap" rel="stylesheet">
+        <!--<link rel="stylesheet" href="css/style.css" />-->
+         <script src="/socket.io/socket.io.js"></script>
+         <script src="js/jquery-3.4.1.js" > </script>
+        <script src="js/poolC.js" > </script>
+        <script src="js/form.js" > </script>
+
+    </head>
+
+    <body>
+      <div class="screenconnection">
+        <div class="polymind">
+          <h1 id="logo">POLYMIND</h1>
+        </div>
+        <div class="newpool" id="connection">
+          <h1 id="newone">Create new Pool</h1>
+        </div>
+        <div class="pools" id="stylescroll">
+        </div>
+      </div>
+
+      <div class="screennewpool">
+        <div class="polymind">
+          <h1 id="logo">POLYMIND</h1>
+        </div>
+        <div class="newpool" id="titlename">
+          <h1 id="newpooltitle">Name</h1>
+        </div>
+        <input class="poolname"id="poolname" type="text" value="Undefined Pool" maxlength = "20" name = "a_name" required>
+        <div class="usernumber" id="usernumber">
+          <div class="number" id="twouser">
+            <h1>2<br> User </h1>
+          </div>
+          <div class="number" id="threeuser">
+            <h1>3<br> User </h1>
+          </div>
+          <div class="number" id="fouruser">
+            <h1>4<br> User </h1>
+          </div>
+        </div>
+        <div class="button" id="button">
+          <div class="buttonleft">
+            <h1>Back</h1>
+          </div>
+          <div class="buttonright">
+            <h1>Create</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenuserport">
+        <div class="indicateur" id="one" >
+          <h1>One</h1>
+        </div>
+        <div class="indicateur" id="two" >
+          <h1>Two</h1>
+        </div>
+        <div class="indicateur" id="three" >
+          <h1>Three</h1>
+        </div>
+        <div class="indicateur" id="four" >
+          <h1>Four</h1>
+        </div>
+      </div>
+
+  </body>
+</html>
