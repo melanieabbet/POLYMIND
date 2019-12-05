@@ -192,8 +192,8 @@ clientSocket.on('connect', function(data) {
            //if we are down & have not been down then update the prevX,Y vars
            // otherwise they will contain mouse positions from a while back
            if(onBox ==false) {
-           previousX = event.clientX;
-           previousY = event.clientY;
+           previousX = event.pageX;
+           previousY = event.pageY;
          }
            console.log("down");
            //make boolean true
@@ -305,12 +305,12 @@ clientSocket.on('connect', function(data) {
              // who is moving??
              let theElement = document.getElementById(event.target.id);
              // calculate difference between previous mouseX and current mouseX pos
-             let diffX = event.clientX-previousX;
+             let diffX = event.pageX-previousX;
              // calculate difference between previous mouseY and current mouseY pos
-             let diffY =  event.clientY-previousY;
+             let diffY =  event.pageY-previousY;
              //store in previous the current mouse pos
-             previousX = event.clientX;
-             previousY = event.clientY;
+             previousX = event.pageX;
+             previousY = event.pageY;
              // set the element's new position:
            /*https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect*/
             let rect = theElement.getBoundingClientRect();
@@ -319,8 +319,8 @@ clientSocket.on('connect', function(data) {
             theElement.style.top = ((rect.top+diffY)+"px");
 
             var pOffset = svg.offset(),
-                     px = event.clientX - pOffset.left,
-                     py = event.clientY - pOffset.top;
+                     px = event.pageX - pOffset.left,
+                     py = event.pageY - pOffset.top;
 
            	line.attr("x1",startX)
              line.attr("x2",px)
@@ -332,10 +332,11 @@ clientSocket.on('connect', function(data) {
 
          let boxC = document.getElementById("c");
          boxC.addEventListener('mousedown', handleDown);
+         boxC.addEventListener('touchstart', handleDown);
 
 
          boxC.addEventListener('mouseup', handleUp);
-         window.addEventListener('mousemove', handleMove);
+         window.addEventListener('touchend', handleMove);
 
 
 
