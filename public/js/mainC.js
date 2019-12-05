@@ -335,8 +335,8 @@ clientSocket.on('connect', function(data) {
          boxC.addEventListener('touchstart', handleDown);
 
          $(boxC).on('move',handleMove);
-         boxC.addEventListener('mouseup', handleUp);
-         window.addEventListener('touchend', handleMove);
+         window.addEventListener('mouseup', handleUp);
+         window.addEventListener('touchend', handleUp);
 
 
 
